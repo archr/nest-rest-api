@@ -9,7 +9,7 @@
     "koa-joi-router": "^4.0.0",
     "koa-logger": "^2.0.1",
     "lodash.foreach": "^4.5.0",
-    "node-nest": "^0.7.3"
+    "node-nest": "git://github.com/archr/nest.git#v2-lib"
   },
   "main": "index.js",
   "scripts": {
