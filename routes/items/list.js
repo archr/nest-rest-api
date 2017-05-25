@@ -22,6 +22,7 @@ module.exports = {
     if (sort) query.sort(sort)
     if (select) query.select(select)
 
-    this.body = yield query.exec()
+    const items = yield query.exec()
+    this.body = items
   }
 }
