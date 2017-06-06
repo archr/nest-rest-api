@@ -4,6 +4,7 @@
   "description": "A rest api for the nest library",
   "dependencies": {
     "es6-requireindex": "^0.3.10",
+    "kcors": "^2.2.1",
     "koa": "^2.0.0",
     "koa-convert": "^1.2.0",
     "koa-joi-router": "git+https://github.com/sahal/joi-router.git#5d574d20bb4cc3905a202ae0ea32b84e8597356c",
