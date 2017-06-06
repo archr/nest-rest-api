@@ -12,6 +12,7 @@ module.exports = {
 
     this.body = {
       status: nest.running ? 'Running' : 'Stopped',
+      workers: nest.workersAmount,
       items: {
         total: items
       },
