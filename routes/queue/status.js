@@ -1,12 +1,24 @@
 const nest = require('../../nest')
+const Item = require('node-nest/lib/db/item').default
+const Job = require('node-nest/lib/db/queue').default
 
 module.exports = {
   method: 'get',
   path: '/status',
-  handler: function *() {
+  handler: function * () {
+    const items = yield Item.count()
+    const jobs = yield Job.count()
+    const jobsFinished = yield Job.count({ 'state.finished': true })
+
     this.body = {
-      status: nest.running ? 'Running' : 'Stopped'
+      status: nest.running ? 'Running' : 'Stopped',
+      items: {
+        total: items
+      },
+      jobs: {
+        total: jobs,
+        finished: jobsFinished
+      }
     }
   }
 }
-

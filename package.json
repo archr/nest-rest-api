@@ -6,10 +6,11 @@
     "es6-requireindex": "^0.3.10",
     "koa": "^2.0.0",
     "koa-convert": "^1.2.0",
-    "koa-joi-router": "^4.0.0",
+    "koa-joi-router": "git+https://github.com/sahal/joi-router.git#5d574d20bb4cc3905a202ae0ea32b84e8597356c",
     "koa-logger": "^2.0.1",
+    "koa-qs": "^2.0.0",
     "lodash.foreach": "^4.5.0",
-    "node-nest": "^0.7.3"
+    "node-nest": "git://github.com/archr/nest.git#v2-lib"
   },
   "main": "index.js",
   "scripts": {
